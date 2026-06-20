@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3E5D8;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+.container {
+    max-width: 740px;
+    width: 100%;
+    background: #fff;
+    margin: 128px 0;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+    padding: 40px 40px 0;
+    border-radius: 48px;
+}
+
+.recipe {
+    padding: 32px 40px 0;
+}
+
+.recipe h1 {
+    font-family: "Young Serif", serif;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: #303030;
+    line-height: 1.2;
+}
+
+.recipe p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #65635e;
+    margin-top: 16px;
+}
+
+.pre-time {
+    background: #fff7fc;
+    margin: 32px 40px 0;
+    padding: 24px 28px;
+    border-radius: 12px;
+}
+
+.pre-time h3 {
+    color: #7b2f5a;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pre-time ul {
+    padding-left: 24px;
+}
+
+.pre-time ul li {
+    padding-left: 16px;
+    padding-bottom: 8px;
+    color: #595353;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.pre-time ul li span {
+    font-weight: 700;
+    color: #5a4a48;
+}
+
+.ingredients {
+    padding: 32px 40px 0;
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
+    font-family: "Young Serif", serif;
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 400;
+    color: #7a463b;
+    margin-bottom: 16px;
+}
+
+.ingredients ul {
+    padding-left: 24px;
+}
+
+.ingredients ul li {
+    padding-left: 16px;
+    padding-bottom: 10px;
+    color: #595353;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+li::marker {
+    color: #7a463b;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.ingredients ul li::marker {
+    font-size: 0.75rem;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 28px 40px;
+}
+
+.instructions {
+    padding: 0 40px;
+}
+
+.instructions ol {
+    padding-left: 24px;
+}
+
+.instructions ol li {
+    padding-left: 16px;
+    padding-bottom: 10px;
+    color: #595353;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.instructions ol li::marker {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.instructions ol li span {
+    font-weight: 700;
+    color: #4a3d3b;
+}
+
+.nutrition {
+    padding: 0 40px 40px;
+}
+
+.nutrition p {
+    font-size: 1rem;
+    color: #65635e;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nutrition-table tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition-table td {
+    padding: 14px 32px;
+    font-size: 1rem;
+    color: #65635e;
+}
+
+.nutrition-table .value {
+    text-align: right;
+    font-weight: 700;
+    color: #7a463b;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .image img {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .recipe {
+        padding: 32px 28px 0;
+    }
+
+    .pre-time {
+        margin: 28px 28px 0;
+        padding: 20px 24px;
+    }
+
+    .ingredients {
+        padding: 28px 28px 0;
+    }
+
+    .divider {
+        margin: 24px 28px;
+    }
+
+    .instructions {
+        padding: 0 28px;
+    }
+
+    .nutrition {
+        padding: 0 28px 32px;
+    }
+
+    .nutrition-table td {
+        padding: 14px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe {
+        padding: 24px 20px 0;
+    }
+
+    .recipe h1 {
+        font-size: 1.5rem;
+    }
+
+    .recipe p {
+        font-size: 0.95rem;
+    }
+
+    .pre-time {
+        margin: 24px 20px 0;
+        padding: 16px 20px;
+    }
+
+    .pre-time h3 {
+        font-size: 1.1rem;
+    }
+
+    .pre-time ul li,
+    .ingredients ul li,
+    .instructions ol li {
+        font-size: 0.95rem;
+    }
+
+    .ingredients {
+        padding: 24px 20px 0;
+    }
+
+    .divider {
+        margin: 20px;
+    }
+
+    .instructions {
+        padding: 0 20px;
+    }
+
+    .nutrition {
+        padding: 0 20px 24px;
+    }
+
+    .nutrition-table td {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .recipe h1 {
+        font-size: 1.3rem;
+    }
+
+    .pre-time ul {
+        padding-left: 20px;
+    }
+
+    .ingredients ul {
+        padding-left: 20px;
+    }
+
+    .instructions ol {
+        padding-left: 20px;
+    }
+
+    .nutrition-table td {
+        padding: 10px 12px;
+    }
+}
